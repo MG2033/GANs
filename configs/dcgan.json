@@ -20,7 +20,7 @@
   "img_channels": 3,
 
   "mode": "train",
-  "device": "cpu",
+  "device": "cuda:0",
 
 
   "celebA_datapath": "/home/mg/Desktop/Repositories/GANs/data/celebA",
