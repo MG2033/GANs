@@ -63,11 +63,11 @@ def create_experiment_dirs(exp_dir):
         for dir_ in dirs:
             if not os.path.exists(dir_):
                 os.makedirs(dir_)
-        print("Experiment directories created!")
+        print("Experiment directories created!\n")
         # return experiment_dir, summary_dir, checkpoint_dir, output_dir
         return experiment_dir, summary_dir, checkpoint_dir, output_dir
     except Exception as err:
-        print("Creating directories error: {0}".format(err))
+        print("Creating directories error: {0}\n".format(err))
         exit(-1)
 
 
