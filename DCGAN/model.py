@@ -1,6 +1,6 @@
 import torch
 import torch.nn as nn
-
+from utils import weights_init_normal
 
 class Generator(nn.Module):
     def __init__(self, z_dim=100, g_dim=128, out_dim=3):
@@ -34,6 +34,8 @@ class Generator(nn.Module):
             nn.ConvTranspose2d(g_dim, out_dim, 4, 2, 1, bias=False),
             nn.Tanh()
         )
+
+        self.apply(weights_init_normal)
 
     def forward(self, input):
         # For educational purposes, I've expanded the connections that way.
@@ -77,6 +79,8 @@ class Discriminator(nn.Module):
             nn.Sigmoid()
         )
 
+        self.apply(weights_init_normal)
+
     def forward(self, input):
         # For educational purposes, I've expanded the connections that way.
         output = self.layer1(input)
@@ -84,4 +88,5 @@ class Discriminator(nn.Module):
         output = self.layer3(output)
         output = self.layer4(output)
         output = self.layer5(output)
+        output = output.view(-1)
         return output

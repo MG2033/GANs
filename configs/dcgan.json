@@ -1,0 +1,32 @@
+{
+  "fixed_Z_batch_size": 32,
+  "Z_dim": 100,
+
+  "batch_size": 32,
+  "learning_rate": 0.0002,
+  "num_epochs": 100,
+  "dim_multiplier": 128,
+  "leaky": 0.2,
+  "adam_betas": [
+    0.5,
+    0.999
+  ],
+
+  "real_label": 1,
+  "fake_label": 0,
+
+  "img_height": 64,
+  "img_width": 64,
+  "img_channels": 3,
+
+  "mode": "train",
+  "device": "cpu",
+
+
+  "celebA_datapath": "/home/mg/Desktop/Repositories/GANs/data/celebA",
+  "data_loader_workers": 4,
+  "pin_memory": true,
+
+  "experiment_dir": "exp1",
+  "checkpoint_file_name": ""
+}
