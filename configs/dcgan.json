@@ -4,7 +4,7 @@
 
   "batch_size": 32,
   "learning_rate": 0.0002,
-  "num_epochs": 100,
+  "num_epochs": 20,
   "dim_multiplier": 128,
   "leaky": 0.2,
   "adam_betas": [
@@ -28,5 +28,5 @@
   "pin_memory": true,
 
   "experiment_dir": "exp1",
-  "checkpoint_file_name": ""
+  "checkpoint_file_name": "checkpoint.pth.tar"
 }
