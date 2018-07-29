@@ -112,6 +112,8 @@ class DCGANTrainer:
         score_real_meter, score_fake_before_meter, score_fake_after_meter = AverageMeter(), AverageMeter(), AverageMeter()
 
         for real_batch, _ in tqdm_batch:
+            if real_batch.shape[0] < self.config.batch_size:
+                break
             # Create the random noise vector from the latent space Z
             z_input = torch.randn(self.config.batch_size, self.config.Z_dim, 1, 1, device=self.device,
                                   dtype=torch.float32)
