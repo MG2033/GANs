@@ -111,6 +111,8 @@ class DCGANTrainer:
         generator_loss_meter, discriminator_loss_meter = AverageMeter(), AverageMeter()
         score_real_meter, score_fake_before_meter, score_fake_after_meter = AverageMeter(), AverageMeter(), AverageMeter()
 
+        discriminator_generator_count = 0
+
         for real_batch, _ in tqdm_batch:
             if real_batch.shape[0] < self.config.batch_size:
                 break
@@ -136,6 +138,12 @@ class DCGANTrainer:
             self.discrimintator_optimizer.zero_grad()
             discriminator_loss.backward()
             self.discrimintator_optimizer.step()
+
+            if discriminator_generator_count < self.config.discriminator_generator_ratio:
+                discriminator_generator_count += 1
+                continue
+            else:
+                discriminator_generator_count = 0
 
             # Training the generator to fool the discriminator
             out = self.discrimintator(gen_out)

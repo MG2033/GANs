@@ -2,6 +2,7 @@
   "fixed_Z_batch_size": 8,
   "Z_dim": 100,
 
+  "discriminator_generator_ratio":5,
   "batch_size": 64,
   "learning_rate": 0.0002,
   "num_epochs": 100,
