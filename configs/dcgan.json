@@ -23,7 +23,7 @@
   "device": "cuda:0",
 
 
-  "celebA_datapath": "/home/mg/Desktop/Repositories/GANs/data/celebA",
+  "celebA_datapath": "/home/kokomind/work/mostafa/GANs/data/celebA",
   "data_loader_workers": 4,
   "pin_memory": true,
 

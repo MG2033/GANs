@@ -1,3 +1,6 @@
+import sys
+sys.path.extend(['.'])
+
 from data.celebA import CelebADataLoader
 from DCGAN.model import Generator
 from DCGAN.model import Discriminator
