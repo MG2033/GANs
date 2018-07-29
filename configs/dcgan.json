@@ -1,5 +1,5 @@
 {
-  "fixed_Z_batch_size": 32,
+  "fixed_Z_batch_size": 8,
   "Z_dim": 100,
 
   "batch_size": 64,
