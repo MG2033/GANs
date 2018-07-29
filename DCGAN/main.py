@@ -23,7 +23,11 @@ def main():
 
     data_loader = CelebADataLoader(config_args)
 
-    device = torch.device(config_args.device)
+    try:
+        device = torch.device(config_args.device)
+    except:
+        print("Error in choosing your running device \"{}\". Using CPU instead.\n".format(config_args.device))
+        device = torch.device('cpu')
 
     trainer = DCGANTrainer(generator, discriminator, data_loader, device, summary_dir, checkpoint_dir, output_dir,
                            config_args)
