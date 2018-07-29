@@ -1,10 +1,10 @@
 {
-  "fixed_Z_batch_size": 128,
+  "fixed_Z_batch_size": 32,
   "Z_dim": 100,
 
-  "batch_size": 128,
+  "batch_size": 64,
   "learning_rate": 0.0002,
-  "num_epochs": 20,
+  "num_epochs": 100,
   "dim_multiplier": 128,
   "leaky": 0.2,
   "adam_betas": [
@@ -27,6 +27,6 @@
   "data_loader_workers": 4,
   "pin_memory": true,
 
-  "experiment_dir": "exp1",
+  "experiment_dir": "exp2_64",
   "checkpoint_file_name": "checkpoint.pth.tar"
 }
