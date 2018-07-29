@@ -28,6 +28,6 @@
   "data_loader_workers": 4,
   "pin_memory": true,
 
-  "experiment_dir": "exp2_64",
+  "experiment_dir": "exp3",
   "checkpoint_file_name": "checkpoint.pth.tar"
 }
