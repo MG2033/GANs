@@ -3,7 +3,7 @@ DCGANs were introduced in the paper called [Unsupervised Representation Learning
 ](https://arxiv.org/abs/1511.06434). They are the true beginning of the new era of GANs after the first paper ([Generative Adversarial Networks](https://arxiv.org/abs/1406.2661)) published by Ian Goodfellow et al.
 
 ## Structure
-The implementation of this network was tested on celebA dataset with a ratio between the discriminator runs to the generator runs of 5:1. Here is a sample output to prove that it's working.
+The implementation of this network was tested on celebA dataset with a ratio between the discriminator runs to the generator runs of 5:1. Here is a sample output at epoch #100 to prove that it's working.
 <div align="center">
 <img src="https://github.com/MG2033/GANs/blob/master/figures/samples_epoch_99.png"><br><br>
 </div>
