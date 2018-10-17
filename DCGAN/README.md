@@ -8,10 +8,10 @@ The implementation of this network was tested on celebA dataset with a ratio bet
 <img src="https://github.com/MG2033/GANs/blob/master/figures/samples_epoch_99.png"><br><br>
 </div>
 
-.
-+-- main.py  : It's the main program from which training or testing starts.
-+-- model.py : The implementation of the network itself is in this file.
-+-- train.py : Loading the data, constructing the loss, performing training procedure, and performing testing procedure are implemented here.
+
+- main.py  : It's the main program from which training or testing starts.
+- model.py : The implementation of the network itself is in this file.
+- train.py : Loading the data, constructing the loss, performing training procedure, and performing testing procedure are implemented here.
 
 ## License
 This project is licensed under the Apache License 2.0 - see the LICENSE file for details.
