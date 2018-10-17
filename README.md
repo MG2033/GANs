@@ -6,9 +6,6 @@ This implementations were made to be an example of a common deep learning softwa
 ## Released Models
 [DCGAN](https://github.com/MG2033/GANs/DCGAN/README.md)
 
-## Usage
-This project uses Python 3.5.3 and PyTorch 0.3.
-
 ### Main Dependencies
  ```
  pytorch 0.4
@@ -21,7 +18,7 @@ This project uses Python 3.5.3 and PyTorch 0.3.
 
 ### Run
 ```
-python main.py --config configs/<your-config-json-file>.json
+python [GAN_DIRECTORY]/main.py --config configs/<your-config-json-file>.json
 ```
 
 #### Tensorboard Visualization
