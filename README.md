@@ -1,7 +1,7 @@
 # GANs
 An implementation of several generative adversarial networks introduced in PyTorch. 
 
-This implementations were made to be an example of a common deep learning software architecture. It's simple and designed to be very modular. All of the components needed for training and visualization are added.
+This implementation was made to be an example of a common deep learning software architecture. It's simple and designed to be very modular. All of the components needed for training and visualization are added.
 
 ## Released Models
 [DCGAN](./DCGAN/)
